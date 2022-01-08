@@ -9,7 +9,7 @@ namespace Db_Trigger
 {
     public class DbUpdater
     {
-        [FunctionName("Function1")]
+        [FunctionName("DbUpdater")]
         public async Task RunAsync([TimerTrigger("* */5 * * * *")] TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
